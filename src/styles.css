@@ -20,10 +20,12 @@ header {
 }
 
 main {
-  min-height: 80%;
+
   display: flex;
 }
-
+figcaption{
+  text-align: center;
+}
 .menu-vertical {
   flex-basis: 200px;
   border-right-style: solid;
@@ -35,6 +37,7 @@ main {
 }
 
 .painel-de-videos {
+  border: 1px solid black;
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
