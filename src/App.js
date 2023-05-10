@@ -4,11 +4,10 @@ import Header from "./componentes/header";
 import CardVideo from "./componentes/CardVideo";
 import InfosUsuario from "./componentes/InfosUsuario";
 export default function App() {
-  //const titulo = "Título do vídeo";
-
-  //function reproduzVideo() {
-   // alert("O vídeo está sendo reproduzido");
- // }
+    const video = {
+      titulo: "bla",
+      imagemVideo:"https://picsum.photos/400/400?a=1",
+    }
   return (
     <div>
       <div className="tela-inteira">
@@ -26,14 +25,7 @@ export default function App() {
           </nav>
 
           <section className="painel-de-videos">
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
-            <CardVideo/>
+            <CardVideo videoConteudo = {video}/>
           </section>
         </main>
 
